@@ -101,6 +101,7 @@ public class ForecastFragment extends Fragment {
                 .getString(getResources().getString(R.string.pref_temp_unit_key),
                         getResources().getString(R.string.pref_temp_unit_default));
 
+
         weatherTask.execute(locationSelected, metricSelected);
     }
 

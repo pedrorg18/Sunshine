@@ -36,6 +36,7 @@ implements Preference.OnPreferenceChangeListener{
         addPreferencesFromResource(R.xml.preferences);
 
         bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_location_key)));
+        bindPreferenceSummaryToValue(findPreference(getString(R.string.pref_temp_unit_key)));
 
     }
 

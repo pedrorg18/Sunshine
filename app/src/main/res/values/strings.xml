@@ -24,6 +24,6 @@
     <string name="pref_location_default">08850,ES</string>
     <string name="pref_temp_unit_key">pref_temp_unit</string>
     <string name="pref_temp_unit_label">Temperature Units</string>
-    <string name="pref_temp_unit_default">Celsius</string>
+    <string name="pref_temp_unit_default">metric</string>
 
 </resources>
