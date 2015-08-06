@@ -96,7 +96,12 @@ public class ForecastFragment extends Fragment {
                 .getString(getResources().getString(R.string.pref_location_key),
                         getResources().getString(R.string.pref_location_default));
 
-        weatherTask.execute(locationSelected);
+        String metricSelected = PreferenceManager
+                .getDefaultSharedPreferences(getActivity())
+                .getString(getResources().getString(R.string.pref_temp_unit_key),
+                        getResources().getString(R.string.pref_temp_unit_default));
+
+        weatherTask.execute(locationSelected, metricSelected);
     }
 
     @Override
@@ -251,7 +256,6 @@ public class ForecastFragment extends Fragment {
             String forecastJsonStr = null;
 
             String format = "json";
-            String units = "metric";
             int numDays = 7;
 
             try {
@@ -268,7 +272,7 @@ public class ForecastFragment extends Fragment {
                 Uri builtUri = Uri.parse(FORECAST_BASE_URL).buildUpon()
                         .appendQueryParameter(QUERY_PARAM, params[0])
                         .appendQueryParameter(FORMAT_PARAM, format)
-                        .appendQueryParameter(UNITS_PARAM, units)
+                        .appendQueryParameter(UNITS_PARAM, params[1])
                         .appendQueryParameter(DAYS_PARAM, Integer.toString(numDays))
                         .build();
 

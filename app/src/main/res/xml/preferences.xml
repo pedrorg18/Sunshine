@@ -7,12 +7,10 @@
         android:defaultValue="@string/pref_location_default"
         android:inputType="text"
         android:singleLine="true" />
-    <!--<ListPreference-->
-        <!--android:dependency="pref_sync"-->
-        <!--android:key="pref_syncConnectionType"-->
-        <!--android:title="@string/pref_syncConnectionType"-->
-        <!--android:dialogTitle="@string/pref_syncConnectionType"-->
-        <!--android:entries="@array/pref_syncConnectionTypes_entries"-->
-        <!--android:entryValues="@array/pref_syncConnectionTypes_values"-->
-        <!--android:defaultValue="@string/pref_syncConnectionTypes_default" />-->
+    <ListPreference
+        android:key="@string/pref_temp_unit_key"
+        android:title="@string/pref_temp_unit_label"
+        android:entries="@array/pref_temp_unit_entries"
+        android:entryValues="@array/pref_temp_unit_values"
+        android:defaultValue="@string/pref_temp_unit_default" />
 </PreferenceScreen>
