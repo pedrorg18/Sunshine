@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.android.sunshine.app.MainActivity"/>
+      <point      
+        x = "444"      
+        y = "276"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.android.sunshine.app.DetailActivity"/>
+      <point      
+        x = "1764"      
+        y = "272"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.example.android.sunshine.app.SettingsActivity"/>
+      <point      
+        x = "3164"      
+        y = "368"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
