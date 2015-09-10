@@ -17,14 +17,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="TODAY"
             android:id="@+id/detail_day_textview" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="JUNE 24"
             android:id="@+id/detail_date_textview" />
 
         <LinearLayout
@@ -43,14 +41,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="21º"
                     android:id="@+id/detail_high_textview" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="8º"
                     android:id="@+id/detail_low_textview" />
 
             </LinearLayout>
@@ -73,7 +69,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:text="CLEAR"
                     android:id="@+id/detail_forecast_textview" />
             </LinearLayout>
         </LinearLayout>
@@ -82,21 +77,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Humidity: 84%"
             android:id="@+id/detail_humidity_textview" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="WIND: 6Km/h NW"
             android:id="@+id/detail_wind_textview" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="PRESSURE: 1014 hPa"
             android:id="@+id/detail_pressure_textview" />
 
     </LinearLayout>
